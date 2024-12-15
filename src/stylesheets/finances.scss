@@ -1,0 +1,429 @@
+.finances-page {
+    margin-top: 50px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.overallrevenue-header {
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+
+    h2 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    p {
+        font-size: 11px;
+        color: #777980;
+        font-weight: 500;
+    }
+}
+
+.renenue-nav {
+    // border: 1px solid #E0E2E7;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+        display: inline-block;
+        padding: 6px 10px;
+        font-size: 10px;
+        margin-right: 0px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .highlighted-revenue {
+        background-color: #F4ECFB;
+        color: #1B49FF;
+    }
+}
+
+.line-chart-label-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.line-chart-label {
+    display: flex;
+
+    .line-icon {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    p {
+        font-size: 12px;
+        color: #667085;
+        margin-bottom: 5px;
+    }
+
+    h2 {
+        color: #1D1F2C;
+        font-size: 15px;
+    }
+
+    .growth {
+        display: inline-block;
+        width: 10px;
+        height: 5px;
+    }
+
+    span {
+        font-size: 10px;
+        display: inline-block;
+    }
+
+    .uptrend {
+        color: #1EA06A;
+    }
+
+    .downtrend {
+        color: #D95858;
+    }
+
+    .percent-div {
+        padding-top: 16px;
+        margin-left: 5px;
+    }
+}
+
+.finance-total-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 25px;
+    border-radius: 10px;
+    width: 100%;
+    // max-width: 350px;
+
+    p {
+        font-size: 15px;
+        margin-bottom: 80px;
+    }
+
+    .arrow {
+        width: 10px;
+        height: 10px;
+        cursor: pointer;
+    }
+}
+
+// .finance-total-card + .finance-total-card {
+//     margin: 30px 0;
+// }
+
+.finance-overall-user-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: -20px;
+    background-color: #fff;
+
+    .search-bar {
+        margin-right: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
+
+.use-scroll-bar-style::-webkit-scrollbar {
+    width: 6px;
+    margin-left: 10px;
+  }
+  
+  /* Track */
+  .use-scroll-bar-style::-webkit-scrollbar-track {
+    background: #e2e9ff;
+    border-radius: 8px;
+  }
+  
+  /* Handle */
+  .use-scroll-bar-style::-webkit-scrollbar-thumb {
+    // background: #1B49FF;
+    background: #1B49FF;
+    height: 5px;
+    border-radius: 8px;
+  }
+
+.finance-user-td {
+    button  {
+        margin-left: 15px;
+    }
+    .tenant-btn {
+        background-color: #FFDB1B1A;
+        color: #FFDB1B;
+    }
+    
+    .landlord-btn {
+        background-color: #1EA06A26;
+        color: #1EA06A;
+    }
+    
+    .agent-btn {
+        background-color: #1B49FF26;
+        color: #1B49FF;
+    }
+    
+    .seeker-btn {
+        background-color: #2BB2FE26;
+        color: #2BB2FE;
+    }
+}
+
+.expense-piechart {
+    width: 230px;
+    margin: 25px auto;
+}
+
+.loans-piechart {
+    width: 260px;
+    margin: 25px auto;
+}
+
+.home-piechart-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 102px;
+    border-radius: 50%;
+}
+
+.expense-piechart-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 102px;
+    border-radius: 50%;
+}
+
+.loans-piechart-center {
+    position: absolute;
+    top: 18.9%;
+    left: 30.5%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 100px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 102px;
+    border-radius: 50%;
+}
+
+.expense-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .title {
+        display: flex;
+        align-items: center;
+
+        p {
+            color: #4A4C56;
+            font-size: 11px;
+        }
+    }
+
+    .color {
+        margin-right: 6px;
+        height: 8px;
+        width: 8px;
+        line-height: 5px;
+        border-radius: 50%;
+    }
+
+    .expense-amount {
+        font-size: 11px;
+        color: #1D1F2C;
+        font-weight: 500;
+    }
+}
+
+.finance-transaction-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .select {
+        display: flex;
+        align-items: center;
+        // border: 1px solid red;
+        margin-top: -20px;
+    }
+
+    .select-date {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-right: 10px;
+        padding: 8px 15px;
+        background-color: white;
+        border: 1px solid #E4E8F6;
+        border-radius: 5px;
+        color: #CAD1E9;
+        cursor: pointer;
+        // height: 30px;
+
+        p {
+            margin-left: 5px;
+        }
+    }
+}
+
+.transaction-table {
+   
+
+    .failed {
+        color: #E11B1C;
+    }
+
+    .completed {
+        color: #1EA06A;
+    }
+
+    .pending {
+        color: #DA9D62;
+    }
+
+    .phcn {
+        color: #1B49FF;
+    }
+
+    .hpb {
+        color: #1EA06A;
+    }
+
+    .airtime {
+        color: #FFDB1B;
+    }
+
+    .rent {
+        color: #FF8500;
+    }
+}
+
+// .pagination-area {
+//     position: sticky;
+//     bottom: 0;
+// }
+
+.finance-overall-profit-card {
+    background-color: #0A1045;
+    // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.my-shadow {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.user-balance-table, .registrations-table {
+    td {
+        color: #4E527B;
+    }
+
+    th {
+        color: #0A1045;
+    }
+
+    button {
+        font-size: 10px;
+        padding: 5px 10px;
+        border-radius: 3px;
+    }
+    .tenant-btn {
+        background-color: #FFDB1B1A;
+        color: #FFDB1B;
+    }
+    
+    .landlord-btn {
+        background-color: #1EA06A26;
+        color: #1EA06A;
+    }
+    
+    .agent-btn {
+        background-color: #1B49FF26;
+        color: #1B49FF;
+    }
+    
+    .seeker-btn {
+        background-color: #2BB2FE26;
+        color: #2BB2FE;
+    }
+}
+
+.hbp-rates-card {
+    background-color: #0A1045;
+}
+
+.hpb-bg-img {
+    background-image: url('../asserts/hbp-rate-bgImg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.transaction-total-card {
+    width: 100%;
+    max-width: 300px;
+}
+
+.offline-transaction, .loans-analysis-btn {
+    button {
+        width: 80px;
+    }
+    .Pending {
+        color: #DA9D62;
+        background-color: #DA9D6226;
+    }
+
+    .Approved {
+        background-color: #1FA96F26;
+        color: #1FA96F;
+    }
+
+    .Denied, .Declined {
+        background-color: #E93B3B26;
+        color: #E93B3B;
+    }
+}
+
+.hide-offline-notification {
+    transform: translateX(400px);
+    transition: all 200ms linear;
+}
+
+.show-offline-notification {
+    transform: translateX(0);
+    transition: all 200ms linear;
+}

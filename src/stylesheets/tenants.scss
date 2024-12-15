@@ -1,0 +1,513 @@
+%flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+.tenants-page {
+    margin-top: 50px;
+}
+
+.tenant-profile-page {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.tenants-nav {
+    // position: fixed;
+    width: 100%;
+    display: flex;
+    border-top: 1px solid #CAD1E9;
+    border-bottom: 1px solid #CAD1E9;
+    background-color: white;
+    // z-index: 999;
+    padding: 0 30px;
+
+    p {
+        margin-right: 15px;
+        color: #71759D;
+        font-size: 12px;
+        padding: 20px 30px;
+        cursor: pointer;
+    }
+
+    .highlighted {
+        border-bottom: 2px solid #1B49FF;
+        color: #1B49FF;
+    }
+}
+
+
+
+.tenants-finance-display-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.tenants-finance-info {
+    .tenants-finance-info-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .tenant-finance-label {
+        display: flex;
+        align-items:flex-start;
+        // justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .tenant-finance-label-color {
+        border-radius: 2px;
+        height: 10px;
+        font-size: 1px;
+        padding: 6px 6px;
+        margin-right: 5px;
+    }
+
+    .tenant-finance-label-info {
+        small {
+            display: block;
+            margin-top: -2px;
+            color: #5C5C5C;
+            font-size: 10px;
+            margin-bottom: 5px;
+        }
+
+        h3 {
+            font-size: 12px;
+        }
+
+        p {
+            color: #333;
+            font-size: 10px;
+            margin: 4px 0;
+        }
+    }
+}
+
+.rent-summary-area {
+    .title {
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .rent-summary {
+        @extend %flex;
+        padding-top: 20px;
+    
+        .rent-summary-info {
+            small {
+                color: #72769F;
+                font-size: 10px;
+            }
+    
+            p {
+                color: #0A1045;
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+    
+        .rent-summary-btn {
+            color: white;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+    }
+}
+
+.tenants-page-chart {
+    margin-bottom: 40px;
+}
+
+.active-tenants-table {
+    table {
+        width: 100%;
+
+
+        td, th {
+            width: 18%;
+        }
+    }
+    tbody {
+
+        tr:hover {
+            background-color: #f2f2f2;
+            cursor: pointer;
+        }
+    }
+
+}
+
+.tenant-profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .tag {
+        padding: 5px 10px;
+        background-color: none;
+        outline: none;
+        border: none;
+        border-radius: 3px;
+        font-size: 12px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+
+    .edit {
+        background-color: #1B49FF;
+        color: white;
+        padding: 10px 20px;
+        font-size: 12px;
+        border: none;
+        outline: none;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        cursor: pointer;
+    }
+
+    .occupied-btn {
+        color: #1B49FF;
+        background-color: rgba(27, 73, 255, 0.15);
+    }
+
+    .vacant-btn {
+        background-color: rgba(214, 185, 79, 0.15);
+        color: #D6B94F;
+    }
+
+    .due-btn {
+        background-color: rgba(233, 101, 59, 0.15);
+        color: #E9653B;
+    }
+
+    .paid-btn {
+        background-color: rgba(189, 242, 218, 0.40);
+        color: #1CAA43;
+    }
+
+    .almost-due-btn {
+        background-color: rgba(254, 239, 218, 0.40);
+        color: #563600;
+    }
+
+}
+
+.profile-holder-img {
+    background-color: #1B49FF;
+    color: white;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 50px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.tenants-name-section {
+    @extend %flex;
+    width: 100%;
+}
+
+.tenants-finance-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    margin: 30px 0;
+    // max-height: 800px;
+    // border: 1px solid green;
+
+    .card {
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        margin-bottom: 20px
+    }
+}
+
+.tenant-wallet-balance-area {
+    @extend %flex;
+    // .balance {
+    //     display: flex;
+    // }
+
+    .tenant-wallet-title {
+        color: #71759D;
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+
+    .tenant-wallet-balance {
+        font-size: 20px;
+    }
+
+    .card-details {
+        display: flex;
+        gap: 20px;
+    }
+
+    .detail-title {
+        margin-bottom: 10px;
+        color: #C2C7CD;
+        font-size: 10px;
+    }
+
+    .detail-info {
+        font-size: 10px;
+        color: #A7ACB2;
+    }
+}
+
+.transaction-header {
+    @extend %flex;
+    margin-bottom: 20px;
+
+    .title {
+        font-size: 9px;
+        font-weight: 600;
+    }
+
+    small {
+        font-size: 9px;
+        color: #A7ACB2;
+    }
+
+    button {
+        background-color:#1B49FF;
+        color: white;
+        border: none;
+        outline: none;
+        padding: 10px;
+        font-size: 12px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        cursor: pointer;
+    }
+}
+
+.transaction-body {    
+    padding-top: 20px;
+    max-height: 465px;
+    overflow-y: scroll;
+
+
+    table {
+
+        tr {
+            border-bottom: 1px solid #E8ECFB;
+        }
+
+        td {
+            // padding-right: 10px;
+            // border-bottom: 1px solid #E8ECFB;
+            padding-bottom: 15px;
+        }
+
+        .transaction-type {
+            display: block;
+            border-radius: 50%;
+            height: 6px;
+            width: 6px;
+            margin-right: 5px;
+        }
+
+        .transaction-main {
+            display: block;
+            margin: 0 20px;
+        }
+
+        .transaction-amount {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 10px;
+            color: #4E527B;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            font-size: 15px;
+            margin: 0;
+        }
+
+        small  {
+            font-size: 8px;
+        }
+
+        .credit {
+            background-color: #1BB121;
+        }
+
+        .debit {
+            background-color: #E93B3B;
+        }
+    }
+}
+
+.transaction-amount {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.credit {
+    background-color: #1BB121;
+}
+
+.debit {
+    background-color: #E93B3B;
+}
+
+// .credit {
+//     background-color: #1BB121;
+//     border-radius: 50%;
+//     padding: 0 5px;
+//     // line-height: 1px;
+// }
+
+.transaction-body::-webkit-scrollbar{
+    display: none;
+  }
+
+.tenants-finance-section {
+    .hbp-balance {
+        background-color: #0A1045;
+        color: white;
+
+        div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+
+            p {
+                font-size: 10px;
+                color: #D5D7EA;
+            }
+        }
+    }
+
+    .rent-card {
+        background-color: #1B49FF;
+        div.first {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+
+            p {
+                font-size: 10px;
+                color: #D5D7EA;
+            }
+
+            span {
+                font-size: 24px;
+                color: white;
+            }
+        }
+        .available-rent {
+            font-size: 18px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .actual-rent {
+            display: block;
+            font-size: 9px;
+            color: #D5D7EA;
+            text-align: end;
+            margin-bottom: 6px;
+        }
+
+        span {
+            display: inline-block;
+            color: #D5D7EA;
+            font-size: 10px;
+            margin-top: 14px;
+        }
+
+        .preferred-saving {
+            color: white;
+        }
+    }
+}
+
+.more_vert {
+    cursor: pointer;
+}
+
+.rent-history {
+
+    p {
+        color: #0A1045;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    small {
+        font-size: 10px;
+        color: #A7ACB2;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    table {
+        display: block;
+        max-height: 240px;
+        overflow: scroll;
+
+        tr {
+            display: block;
+            border-bottom: 1px solid #DADEE2;
+        }
+    
+        td {
+            padding: 20px 0;
+        }
+
+        .date, .action {
+            color: #4E527B;
+            font-size: 12px;
+        }
+
+        .action {
+            padding: 0 10px;
+        }
+
+        .amount {
+            font-weight: 600;
+            font-size: 12px;
+        }
+    }
+
+    table::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.tenant-progress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // margin-bottom: 20px;
+
+    .progress-container {
+        width: 70%;
+    }
+}
+
+.tenants-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+

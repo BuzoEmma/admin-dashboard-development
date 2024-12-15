@@ -1,0 +1,76 @@
+.login-screen {
+    background-image: url(../asserts/login-background-img.svg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.login-div {
+    background: #F8F9FE;
+    height: 100%;
+    padding: 20px 5%;
+    width: 100%;
+    max-width: 600px;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+.login-div form {
+    margin-top: 120px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.login-header {
+    margin-bottom: 10px;
+}
+
+.login-div p {
+    font-size: 14px;
+    color: #5D6065;
+    margin-bottom: 80px;
+}
+
+.login-div input {
+    display: block;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: #F5F7FA;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+::placeholder {
+    color: #B7B8BA;
+    font-size: 12px;
+}
+
+.login-div button {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    background: #1B49FF;
+    text-align: center;
+    border: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    color: white;
+    margin: 20px 0 30px 0;
+    cursor: pointer;
+}
+
+.login-div button:hover {
+    background-color: #4267f9;
+}
+
+.login-div button:focus {
+    border: 1px solid white;
+}
+
+.login-div span {
+    font-size: 12px;
+    color: #1B49FF;
+}

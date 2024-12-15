@@ -1,0 +1,44 @@
+.total-tile {
+    height: 150px;
+    padding: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.display-total {
+    p {
+        color:#4E527B;
+    }
+
+    .trend-percent {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    .uptrend {
+        color: #1EA06A;
+    }
+
+    .downtrend {
+        color: #D95858;
+    }
+}
+
+.uptrend {
+    color: #1EA06A;
+}
+
+.downtrend {
+    color: #D95858;
+}
+
+// .display-flex {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+// }

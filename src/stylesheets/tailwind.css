@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .highlightedTab {
+        @apply border-b-2 border-b-[#1B49FF] text-[#1B49FF] pb-4 px-3 -mb-4
+    }
+}
